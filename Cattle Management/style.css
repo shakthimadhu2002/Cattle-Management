@@ -1,0 +1,169 @@
+body  
+{  
+    margin: 50px;  
+    padding: 75 px;  
+    background-color:#9cdefcba;  
+    font-family:'fantasy';  
+    background-image: url(images/bag.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}  
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -25deg,
+    #3700ff 0%,
+    #7508e9 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  
+      font-size: 45px;
+}
+
+@keyframes textclip {
+  to {
+    background-position:200% center;
+  }
+}
+.login{   
+          
+        border-radius: 20px ;  
+        width: 25%; 
+        display: inline-block;
+        margin-right: 7%;
+        padding-left: 5%;
+        float: right;
+}
+h6{
+    color:blanchedalmond;
+    font-size: 30px;
+}
+h3{    
+    color:rgb(218, 17, 10);  
+    text-align: auto;
+    padding-left: 30%;
+    font-size: 40px;
+}
+label{  
+    color: #2fb087;  
+    font-size: 20px;
+    padding: 10px;
+     
+}  
+#Uname{  
+    width: 90%;  
+    height: 30px;  
+    border: #0f1110;  
+    border-width: 5px;
+    border-radius: 12px;  
+    padding-left: 10px;  
+}  
+#Pass{  
+    width: 90%;  
+    height: 30px;  
+    border: #0f1110;  
+    border-width: 5px;
+    border-radius: 12px;  
+    padding-left: 10px;  
+      
+}  
+button{  
+    width: 90%;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: rgb(0, 14, 1); 
+    float: auto; 
+    background-color: rgb(91, 244, 91);
+    position: center;
+    cursor: pointer;
+}  
+span{  
+    color: rgb(255, 255, 255);  
+    font-size: 15px;  
+} 
+#reg{
+    width: 90%;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: rgb(0, 14, 1); 
+    float: auto; 
+    background-color: rgb(178, 237, 249);
+    position: center;
+    cursor: pointer;
+} 
+a{  
+    float: auto; 
+    color: #fff;
+}  
+button:hover
+{
+    opacity: 0.8;
+}
+.pop-outin {
+    animation: 2s anim-popoutin ease;
+  }
+  
+  @keyframes anim-popoutin {
+    0% {
+      color: black;
+      transform: scale(0);
+      opacity: 0;
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+      color: rgb(12, 12, 12);
+      transform: scale(2);
+      opacity: 1;
+      text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      color: black;
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      /* animate nothing to add pause at the end of animation */
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
+  .fromtop {
+    animation: 0s anim-fromtop linear infinite;
+  }
+  @keyframes anim-fromtop {
+    0% { opacity: 0; transform: translateY(-100%);}
+    25% { opacity: 1; transform: translateY(0%);}
+    50% {
+    }
+    100% {
+    }
+  }
+  .radiobutton:hover
+  {
+    color:#e78b12;
+    
+  }
+  input {
+    margin: .4rem;
+    padding-left: 10%;
+}
+

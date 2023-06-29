@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Add Animal</title>
+        <link rel="icon" href="../images/cow.png" type="image/x-icon" style="opacity:0.5 ;"> 
+        <link rel="stylesheet" type="text/css" href="AddUser.css">
+    </head>
+    <body>
+        <div class="wrapper" >
+			<div class="inner">
+                <div class="cow-img" style="float: right; 
+                                            height:400px; width: 45%; 
+                                            margin-top: 140px;
+											margin-right: 20px;">
+                                            <img src="../images/image4.png">
+                </div>
+				<form method="post" action="AddUser.php">
+					<h3 class="browns">Add User</h3>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Name</label>
+							<input type="text" class="form-control" name="name" required>
+						</div>
+						<div class="form-wrapper">
+							<label for="">User Name</label>
+							<input type="text" class="form-control" name="Uname" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="User">User</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<div class="form-wrapper"> 
+							<input type="radio" name="User" id="Farmer" class="form-control" value="Farmer" required>
+							<label for="Farmer">Farmer</label>
+					 	</div>
+					  	<div class="form-wrapper"> 
+						  <input type="radio" name="User" id="Buyer" class="form-control" value="Buyer" required>
+						  <label for="Buyer">Buyer</label>
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<label for="">Address</label>
+						<input type="text" class="form-control" name="address" required>
+					</div>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Location</label>
+							<input type="text" class="form-control" name="location" required>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Zip Code</label>
+							<input type="text" class="form-control" name="zCode" required>
+						</div>
+					</div>
+                    <div class="form-group">
+                        <div class="form-wrapper">
+						    <label for="">Account Number</label>
+						    <input type="text" class="form-control" name="AccNo" required>
+					    </div>
+					    
+                        <div class="form-wrapper">
+						    <label for="">Phone Number</label>
+						    <input type="text" class="form-control" name="PhNo" maxlength="10" required>
+					    </div>
+                    </div>
+					<div class="form-group">
+                        <div class="form-wrapper">
+						    <label for="">Password</label>
+						    <input type="password" class="form-control" name="pass" required>
+					    </div>
+					    
+                        <div class="form-wrapper">
+						    <label for="">Re Enter Password</label>
+						    <input type="password" class="form-control" name="passw" required>
+					    </div>
+                    </div>
+					<button type="Submit" name="sub" value="+Add User">+Add User</button>
+				</form>
+			</div>
+		</div>
+		<a href="ViewUsers.php" ><button type="submit" name="sub" style="margin-left: 80%; margin-bottom: 5%;">Back</button></a>
+    </body>
+</html>

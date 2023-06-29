@@ -1,0 +1,134 @@
+body {
+  font-family: "lato", sans-serif;
+  background-image: url("../images/ranch.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  padding-left: 13%;
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+}
+h2 small {
+  font-size: 0.5em;
+}
+@font-face{
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+h3{
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+@font-palette-values --Browns{
+  font-family: Rocher;
+  base-palette: 9;
+}
+
+.responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.responsive-table .table-header {
+  background-color:#6c534a;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #c4a092;
+}
+.responsive-table .table-row {
+  background-color: #c4a092;
+  color: #6c534a;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.responsive-table .col-1 {
+  flex-basis: 10%;
+}
+.responsive-table .col-2 {
+  flex-basis: 40%;
+}
+.responsive-table .col-3 {
+  flex-basis: 25%;
+}
+.responsive-table .col-4 {
+  flex-basis: 25%;
+}
+@media all and (max-width: 767px) {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table li {
+    display: block;
+  }
+  .responsive-table .col {
+    flex-basis: 100%;
+  }
+  .responsive-table .col {
+    display: flex;
+    padding: 10px 0;
+  }
+  .responsive-table .col:before {
+    color: #6C7A89;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+}
+.top_bar{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.top_bar button{
+  position: absolute;
+  right: 0;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 0 12px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.top_bar button:hover{
+  background-color: #fff;
+}
+
+.top_bar button:active{
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .top_bar button{
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}

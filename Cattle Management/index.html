@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Perfect Cute</title>
+    <link rel="icon" href="images/cow.png" type="image/x-icon" style="opacity:0.5 ;"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h4 class="animate-charcter">Perfect Cute Cattles</h4>
+    <div class='pop-outin'>   
+    <div class="login">  
+      <h3>Login</h3>  
+      <form id="login" method="post" action="login.php" > 
+        <input type="radio" id="admin" name="User" value="Admin" style="position: static;">
+        <label class="radiobutton" for="admin">Admin</label> 
+        <input type="radio" id="farmer" name="User" value="Farmer" style="position: static;">
+        <label class="radiobutton" for="farmer">Farmer</label><br>
+        <input type="radio" id="buyer" name="User" value="Buyer" style="position: static;">
+        <label class="radiobutton" for="buyer">Buyer</label><br><br> 
+        <label><b>User Name</b><br> </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username" required>    
+        <br><br>    
+        <label><b>Password</b><br> </label>    
+        <input type="password" name="password" id="Pass" placeholder="Password" required>
+        <br><br> 
+        <button type="Submit" name="sub" value="LOGIN">Login</button>
+        <br><br>   
+      </form>
+      <form action="Register.html">
+        <button id="reg" type="Submit" name="reg" value="Register">New? Click here to Register</button>       
+        <br><br>    
+        <a href="#">Forgot Password?</a>
+      </form>
+    </div> 
+    </div>  
+  </body>
+</html>

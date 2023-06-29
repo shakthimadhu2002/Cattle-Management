@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body {
+    background-image: url("../images/ranch.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Fjalla One", sans-serif;
+  }
+  .waviy {
+    position: relative;
+    padding-top: 10%;
+    padding-left: 15%;
+    justify-items: center;
+    justify-content: center;
+  }
+  .waviy span {
+    text-justify: center;
+    display: inline-flex;
+    font-size: 65px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) ;
+      color: #DF4500;
+    }
+  }
+mark{
+    background-color:#a89086;
+}
+mark:hover{
+    background-color: #58484b;
+    color: white;
+}
+  

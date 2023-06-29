@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Add Animal</title>
+        <link rel="icon" href="../images/cow.png" type="image/x-icon" style="opacity:0.5 ;"> 
+        <link rel="stylesheet" type="text/css" href="AddAnimal.css">
+    </head>
+    <body>
+        <div class="wrapper" >
+			<div class="inner">
+                <div class="cow-img" style="float: right; 
+                                            height:400px; width: 50%; 
+                                            margin-top: 39px;">
+                                            <img src="../images/image2.png">
+                </div>
+				<form method="post" action="AddAnimal.php" enctype="multipart/form-data">
+					<h3 class="browns">Add Animals</h3>
+					<div class="form-wrapper">
+						<label for="">Animal Name</label>
+						<input type="text" class="form-control" name="name" required>
+					</div>
+                    <div class="form-group">
+                        <div class="form-wrapper">
+						    <label for="">Breed</label>
+						    <input type="text" class="form-control" name="breed" required>
+					    </div>
+					    
+                        <div class="form-wrapper">
+						    <label for="">Care of (Owner name)</label>
+						    <input type="text" class="form-control" name="owner" required>
+					    </div>
+                    </div>
+                    <div class="form-wrapper">
+						<label for="">Description</label>
+						<input type="text" class="form-control" name="desc" required>
+					</div>
+                    <div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Count</label>
+							<input type="text" class="form-control" name="count" required>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Cost</label>
+							<input type="text" class="form-control" name="cost" required>
+						</div>
+					</div>
+                    <div class="form-wrapper">
+						<label for="">Picture</label>
+						<input type="file" class="form-control" name="pic" id="pic" accept=".png,.jpg,.jpeg" required style="padding-top:10px;">
+					</div>
+					<button type="submit" name="sub" value="+Add Animal">+Add Animal</button>
+				</form>
+			</div>
+		</div>
+		<a href="ViewAnimals.php" ><button type="submit" name="sub" style="margin-left: 80%; margin-bottom: 5%;">Back</button></a>
+    </body>
+</html>
